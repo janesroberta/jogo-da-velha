@@ -32,7 +32,9 @@
   .board.x .cell:not(.x):not(.circle):hover::before {
     background: rgba(255, 255, 255, 0.3) !important;
   }
+
   /* Célula */
+
 .cell {
     width: 100px;
     height: 100px;
@@ -71,13 +73,14 @@
     border-right: none;
   }
 
-/* X * /
+/* X */
+
 .cell.x::before,
-.cell.x::after,
+.cell.x::after, 
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before {
   content: "";
-  height: calc(100px 0.15);
+  height: calc(100px *0.15);
   width: calc(100px * 0.9);
   background: white;
   position: absolute;
@@ -93,19 +96,19 @@
   transform: rotate(-45deg);
 }
 
-/* Circle /
+/* Circle*/
 .cell.circle::before,
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::after {
   content: "";
-  height: calc(100px 0.9);
+  height: calc(100px *0.9);
   width: calc(100px * 0.9);
   background: white;
   position: absolute;
   border-radius: 50%;
 }
-  /* Mensagem de Vitória */
+  /* Mensagem de Vitória*/
 .winning-message {
     display: none;
     position: fixed;
