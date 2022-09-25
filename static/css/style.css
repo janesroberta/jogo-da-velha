@@ -9,8 +9,8 @@
     width: 100vw;
     background: linear-gradient(
       90deg,
-      rgba(65, 185, 131, 1) 0%,
-      rgba(0, 212, 255, 1) 100%
+      rgb(226, 181, 213) 0%,
+      rgb(212, 0, 255) 100%
     );
   }
   
